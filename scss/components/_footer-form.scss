@@ -1,0 +1,32 @@
+.footer-form {
+    display: flex;
+    align-items: flex-end;
+    flex-grow: 1;}
+
+.footer-form__label {
+    flex-grow: 2;
+    align-items: center;
+    justify-content: center;
+    width: 358px;  
+    margin-right: 12px;}
+
+.footer-form__input {
+    cursor: pointer;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+    width: 100%;
+
+    color: rgba(255, 255, 255, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+
+    background-color: #2F303A;
+    padding: 14px 14px 14px 15px;}
+
+
+
+.footer-form__icon {
+    fill: currentColor;
+    margin-left: 10px;}
