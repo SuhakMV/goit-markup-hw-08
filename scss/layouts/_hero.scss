@@ -1,7 +1,12 @@
 .hero {
     text-align: center;
     padding-top: 200px;
-    padding-bottom: 200px;}
+    padding-bottom: 200px;
+
+    @include mq(not-desktop){
+        padding-top: 118px;
+        padding-bottom: 118px;}
+}
 
 .hero__overlay {
     max-width: 1600px;
@@ -15,13 +20,34 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    background-color: #2F303A;}
+    background-color: #2F303A;
 
-.hero__title {    
-    font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
-    letter-spacing: 0.06em;
+    @include mq(tablet-only){
+        background-image: linear-gradient(to right, 
+        rgba(47, 48, 58, 0.4),
+         rgba(47, 48, 58, 0.4)),
+         url(../images/hero/hero-tab.jpg);
+        max-width: 768px;
+        height: 400px;}
+
+
+    @include mq(mobile-only){
+        background-image: linear-gradient(to right, 
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)),
+        url(../images/hero/hero-mob.jpg);
+        max-width: 480px;
+        height: 400px;}
+}
+
+
+.hero__title {   
+    @include fonts(900, 44px, 1.36, 0.06em);
+
+    @include mq(not-desktop){
+    @include fonts(900, 26px, 1.62, 0.06em);  
+    }
+    
     text-transform: uppercase;
     color: #FFFFFF;
     margin-bottom: 30px;}

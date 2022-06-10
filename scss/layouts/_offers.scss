@@ -1,4 +1,9 @@
-.offers {padding-top: 0;}
+.offers {
+    @include mq(not-desktop) {
+        display: none;}
+
+        padding-top: 0;
+}
 
 .offers__list {
     display: flex;

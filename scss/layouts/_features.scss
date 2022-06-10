@@ -4,23 +4,64 @@
     flex-wrap: wrap;}
 
 .features__item {
-    display: block;
-    width: 270px;
-    flex-wrap: wrap;
-    margin-right: 30px;
+    @include mq(mobile) {
+        display: block;
+        width: 450px;
+        margin-bottom: 30px;
+    }
 
-    &:last-child {margin-right: 0;}
+    @include mq(tablet) {
+        display: block;
+        width: 354px;
+        flex-wrap: wrap;
+
+        &:nth-child(odd) {margin-right: 30px;}
+    }
+
+    @include mq(desktop) {
+        display: block;
+        width: 270px;
+        flex-wrap: wrap;
+        margin-right: 30px;
+    
+        &:last-child {margin-right: 0;}
+    }  
 }
 
 .features-image {
-    display: flex;
-    width: 270px;
-    height: 120px;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 30px;
-    background-color: #F5F4FA;
-    border-radius: 4px;}
+    @include mq(mobile) {
+        display: flex;
+        width: 450px;
+        height: 120px;
+        align-items: center;
+        justify-content: center;
+        background-color: #F5F4FA;
+        border-radius: 4px;
+        margin-bottom: 30px;
+    }
+
+    @include mq(tablet) {
+        display: flex;
+        flex-wrap: wrap;
+        width: 354px;
+        height: 120px;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 30px;
+        background-color: #F5F4FA;
+        border-radius: 4px;
+    }
+
+    @include mq(desktop) {
+        display: flex;
+        width: 270px;
+        height: 120px;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 30px;
+        background-color: #F5F4FA;
+        border-radius: 4px;}
+}
 
 .features-image__icon {
     width: 70px;
@@ -28,17 +69,18 @@
     margin: 0;}
 
 .features__title {
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
+    @include mq(mobile-only) {
+        text-align: center;}
+
+    @include fonts (null, 14px, 1.14, 0.03em);
+
     text-transform: uppercase;
     color: var(--primary-title-color);
     margin-bottom: 10px;}
 
 .features__text {
-    font-size: 14px;
-    line-height: 24px;
-    letter-spacing: 0.03em;
+    @include fonts (null, 14px, 1.72, 0.03em);
+
     color: var(--primary-text-color);
 
     &::first-letter {
