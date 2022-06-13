@@ -19,30 +19,29 @@
         background-color:#FFFFFF;}
     }
 
-    .modal__button-close {
-        position: absolute;
-        top: 8px;
-        right: 8px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 30px;
-        height: 30px;
-        color: #000;
-        border: 1px solid rgba(0, 0, 0, 0.1);
-        background-color: #FFFFFF;
-        border-radius: 50%;
-        cursor: pointer;
-        transition-property: background-color;
-        transition-duration: var(--primary-transition-durat);
-        transition-timing-function: var(--primary-transition-timing-function);
+.modal__button-close {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    color: #000;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: #FFFFFF;
+    border-radius: 50%;
+    cursor: pointer;
+    transition-property: color;
+    transition-duration: var(--primary-transition-durat);
+    transition-timing-function: var(--primary-transition-timing-function);
     
-        fill: currentColor;
+    fill: currentColor;
     
-    &:hover,
-    &:focus {
-        color: #FFFFFF;
-        background-color: var(--primary-button-color);}
+        &:hover,
+        &:focus {
+            color: var(--primary-button-color)}
     }
 
     .modal-button__submit {
