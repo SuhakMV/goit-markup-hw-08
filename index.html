@@ -15,8 +15,8 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
       integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
       crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+      referrerpolicy="no-referrer"/>
+      
     <!-- Custom styles -->
     <link rel="stylesheet" href="./css/main.min.css" />
     <title>Module 08</title>
@@ -56,24 +56,29 @@
               +38 096 111 11 11</a>
           </li>
         </ul>
+        <button data-mobile-open type="button" class="mobile-button__open">
+          <svg width="40px" height="40px">
+            <use href="./images/sprite.svg#mobile-open-icon"></use>
+          </svg>
+        </button>
       </div>
     </header>
 
 <!-- MOBILE MENU -->
 
-<!--     <div class="mobile-menu conteiner">
-      <button data-modal-close type="button" class="mobile-button__close">
+    <div class="mobile-menu conteiner is-hidden" data-mobile>
+      <button data-mobile-close type="button" class="mobile-button__close">
         <svg class="mobile-icon__close" width="40px" height="40px">
-          <use href="./images/sprite.svg#icon-close-mobile"></use>
+          <use href="./images/sprite.svg#mobile-close-icon"></use>
         </svg>
       </button>
       <ul class="mobile-nav">
         <li class="mobile-nav__item">
-          <a href="" class="mobile-nav__acent mobile-nav__link">Студия</a></li>
+          <a href="./index.html" class="mobile-nav__acent mobile-nav__link">Студия</a></li>
         <li class="mobile-nav__item">
-          <a href="" class="mobile-nav__link">Портфолио</a></li>
+          <a href="./portfolio.html" class="mobile-nav__link">Портфолио</a></li>
         <li class="mobile-nav__item">
-          <a href="" class="mobile-nav__link">Контакты</a></li>
+          <a href="/" class="mobile-nav__link">Контакты</a></li>
       </ul>
 
       <ul class="mobile-contacts">
@@ -93,7 +98,7 @@
         <li class="mobile-socials__item">
           <a href="" class="mobile-socials__link">LinkedIn</a></li>
       </ul>
-    </div> -->
+    </div>
 
     <!-- MAIN -->
     <main>
@@ -166,7 +171,6 @@
           </form>
         </div>
       </div>
-
       <!-- FEATURES SECTION -->
       <section class="section">
         <div class="container">
@@ -229,15 +233,57 @@
           <h2 class="section-title">чем мы занимаемся</h2>
           <ul class="offers__list">
             <li class="offers__item">
-                <img src="./images/photo_1.png" alt="desk office" width="370" class="offers__image"/>
+              <picture>
+                <source 
+                  media="(min-width: 1200px)" 
+                  srcset="
+                    ./images/offers/offers-1.jpg    1x,
+                    ./images/offers/offers-1_@2x.jpg 2x"
+                  type="image/jpg" />
+
+                  <img
+                  class="offers__image"
+                  src="./images/offers/offers-1.jpg"
+                  alt="desk office"
+                  width="auto"
+                  loading="lazy"/>
+              </picture>
                 <p class="offers__text">десктопные приложения</p>
             </li>
             <li class="offers__item">
-                <img src="./images/photo_2.png" alt="mobile phones" width="370" class="offers__image"/>
+              <picture>
+                <source 
+                  media="(min-width: 1200px)" 
+                  srcset="
+                    ./images/offers/offers-2.jpg    1x,
+                    ./images/offers/offers-2_@2x.jpg 2x"
+                  type="image/jpg" />
+
+                  <img
+                  class="offers__image"
+                  src="./images/offers/offers-2.jpg"
+                  alt="desk office"
+                  width="auto"
+                  loading="lazy"/>
+              </picture>
                 <p class="offers__text">мобильные приложения</p>
             </li>
             <li class="offers__item">
-                <img src="./images/photo_3.png" alt="graphic tablet" width="370" class="offers__image"/>
+              <picture>
+                <source 
+                  media="(min-width: 1200px)" 
+                  srcset="
+                    ./images/offers/offers-3.jpg    1x,
+                    ./images/offers/offers-3_@2x.jpg 2x"
+                  type="image/jpg" />
+
+                  <img
+                  class="offers__image"
+                  src="./images/offers/offers-3.jpg"
+                  alt="desk office"
+                  width="auto"
+                  loading="lazy"/>
+              </picture>
                 <p class="offers__text">дизайнерские решения</p>
             </li>
           </ul>
@@ -249,7 +295,35 @@
           <h2 class="section-title">наша команда</h2>
           <ul class="team-cards">
             <li class="team-cards__item">
-              <img src="./images/photo_4.png" alt="designer" width="100%" />
+              <picture>
+                <source 
+                  media="(min-width: 1200px)" 
+                  srcset="
+                    ./images/team/team-1_sm.jpg    1x,
+                    ./images/team/team-1_sm@2x.jpg 2x" 
+                  type="image/jpg" />
+
+                <source 
+                  media="(min-width: 768px)" 
+                  srcset="
+                    ./images/team/team-1_md.jpg    1x,
+                    ./images/team/team-1_md@2x.jpg 2x" 
+                  type="image/jpg" />
+
+                  <source 
+                  media="(max-width: 767px)" 
+                  srcset="
+                    ./images/team/team-1_lg.jpg    1x,
+                    ./images/team/team-1_lg@2x.jpg 2x" 
+                  type="image/jpg" />
+
+                  <img
+                  src="./images/team/team-1_sm.jpg"
+                  alt="designer"
+                  width="auto"
+                  loading="lazy"/>
+              </picture>
+
               <div class="team-member">
                 <h3 class="team-member__name">игорь демьяненко</h3>
                 <p lang="en" class="team-member__position">Product Designer</p>
@@ -287,7 +361,35 @@
             </li>
 
             <li class="team-cards__item">
-              <img src="./images/photo_5.png" alt="developer" width="100%" />
+              <picture>
+                <source 
+                  media="(min-width: 1200px)" 
+                  srcset="
+                    ./images/team/team-2_sm.jpg    1x,
+                    ./images/team/team-2_sm@2x.jpg 2x" 
+                  type="image/jpg" />
+
+                <source 
+                  media="(min-width: 768px)" 
+                  srcset="
+                    ./images/team/team-2_md.jpg    1x,
+                    ./images/team/team-2_md@2x.jpg 2x" 
+                  type="image/jpg" />
+
+                  <source 
+                  media="(max-width: 767px)" 
+                  srcset="
+                    ./images/team/team-2_lg.jpg    1x,
+                    ./images/team/team-2_lg@2x.jpg 2x" 
+                  type="image/jpg" />
+
+                  <img
+                  src="./images/team/team-2_sm.jpg"
+                  alt="developer"
+                  width="auto"
+                  loading="lazy"/>
+              </picture>
+
               <div class="team-member">
                 <h3 class="team-member__name">ольга репина</h3>
                 <p lang="en" class="team-member__position">Frontend Developer</p>
@@ -325,7 +427,35 @@
             </li>
 
             <li class="team-cards__item">
-              <img src="./images/photo_6.png" alt="marketing" width="100%" />
+              <picture>
+                <source 
+                  media="(min-width: 1200px)" 
+                  srcset="
+                    ./images/team/team-3_sm.jpg    1x,
+                    ./images/team/team-3_sm@2x.jpg 2x" 
+                  type="image/jpg" />
+
+                <source 
+                  media="(min-width: 768px)" 
+                  srcset="
+                    ./images/team/team-3_md.jpg    1x,
+                    ./images/team/team-3_md@2x.jpg 2x" 
+                  type="image/jpg" />
+
+                  <source 
+                  media="(max-width: 767px)" 
+                  srcset="
+                    ./images/team/team-3_lg.jpg    1x,
+                    ./images/team/team-3_lg@2x.jpg 2x" 
+                  type="image/jpg" />
+
+                  <img
+                  src="./images/team/team-3_sm.jpg"
+                  alt="marketing"
+                  width="auto"
+                  loading="lazy"/>
+              </picture>
+
               <div class="team-member">
                 <h3 class="team-member__name">николай тарасов</h3>
                 <p lang="en" class="team-member__position">Marketing</p>
@@ -363,7 +493,35 @@
             </li>
 
             <li class="team-cards__item">
-              <img src="./images/photo_7.png" alt="ui designer" width="100%" />
+              <picture>
+                <source 
+                  media="(min-width: 1200px)" 
+                  srcset="
+                    ./images/team/team-4_sm.jpg    1x,
+                    ./images/team/team-4_sm@2x.jpg 2x" 
+                  type="image/jpg" />
+
+                <source 
+                  media="(min-width: 768px)" 
+                  srcset="
+                    ./images/team/team-4_md.jpg    1x,
+                    ./images/team/team-4_md@2x.jpg 2x" 
+                  type="image/jpg" />
+
+                  <source 
+                  media="(max-width: 767px)" 
+                  srcset="
+                    ./images/team/team-4_lg.jpg    1x,
+                    ./images/team/team-4_lg@2x.jpg 2x" 
+                  type="image/jpg" />
+
+                  <img
+                  src="./images/team/team-4_sm.jpg"
+                  alt="ui designer"
+                  width="auto"
+                  loading="lazy"/>
+              </picture>
+
               <div class="team-member">
                 <h3 class="team-member__name">михаил ермаков</h3>
                 <p lang="en" class="team-member__position">UI Designer</p>
@@ -521,5 +679,6 @@
       </div>
     </footer>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

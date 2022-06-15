@@ -16,6 +16,9 @@
     flex-direction: column;
 
     background-color: #fff;
+
+    //opacity: 0;
+    //pointer-events: none;
 }
 
 .mobile-nav__item {
@@ -106,6 +109,7 @@
     cursor: pointer;
 
     border: none;
+    color: var(--primary-title-color);
     background-color: #fff;
     transition-property: color;
     transition-duration: var(--primary-transition-durat);

@@ -1,3 +1,27 @@
+
+.mobile-button__open {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    fill: currentColor;
+    border: none;
+    background-color: #FFFFFF;
+
+    transition-property: color;
+    transition-duration: var(--primary-transition-durat);
+    transition-timing-function: var(--primary-transition-timing-function);
+
+    &:hover,
+    &:focus {color: var(--primary-button-color);}
+
+    display: none;
+
+    @include mq(mobile-only) {
+        display: inline;
+    }
+
+}
+
 .hero__button {
     font-family: 'Roboto';
     font-style: normal;
