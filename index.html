@@ -7,7 +7,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
-      rel="stylesheet"/>
+      rel="stylesheet"
+    />
 
     <!-- Modern-normalize -->
     <link
@@ -15,8 +16,9 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
       integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
       crossorigin="anonymous"
-      referrerpolicy="no-referrer"/>
-      
+      referrerpolicy="no-referrer"
+    />
+
     <!-- Custom styles -->
     <link rel="stylesheet" href="./css/main.min.css" />
     <title>Module 08</title>
@@ -26,8 +28,7 @@
     <header class="header">
       <div class="container header__container">
         <nav class="site-nav">
-          <a href="/" lang="en" class="logo"
-            >Web<span class="logo__header">Studio</span></a>
+          <a href="/" lang="en" class="logo">Web<span class="logo__header">Studio</span></a>
           <ul class="site-nav__list">
             <li class="site-nav__item">
               <a href="./index.html" class="link link_acent">Студия</a>
@@ -36,7 +37,8 @@
               <a href="./portfolio.html" class="link">Портфолио</a>
             </li>
             <li class="site-nav__item">
-              <a href="/" class="link">Контакты</a></li>
+              <a href="/" class="link">Контакты</a>
+            </li>
           </ul>
         </nav>
         <ul class="contacts">
@@ -53,7 +55,8 @@
               ><svg class="contacts__icon" width="10px" height="16px">
                 <use xlink:href="./images/sprite.svg#icon-smartphone"></use>
               </svg>
-              +38 096 111 11 11</a>
+              +38 096 111 11 11</a
+            >
           </li>
         </ul>
         <button data-mobile-open type="button" class="mobile-button__open">
@@ -64,40 +67,51 @@
       </div>
     </header>
 
-<!-- MOBILE MENU -->
+    <!-- MOBILE MENU -->
 
-    <div class="mobile-menu conteiner is-hidden" data-mobile>
-      <button data-mobile-close type="button" class="mobile-button__close">
-        <svg class="mobile-icon__close" width="40px" height="40px">
-          <use href="./images/sprite.svg#mobile-close-icon"></use>
-        </svg>
-      </button>
-      <ul class="mobile-nav">
-        <li class="mobile-nav__item">
-          <a href="./index.html" class="mobile-nav__acent mobile-nav__link">Студия</a></li>
-        <li class="mobile-nav__item">
-          <a href="./portfolio.html" class="mobile-nav__link">Портфолио</a></li>
-        <li class="mobile-nav__item">
-          <a href="/" class="mobile-nav__link">Контакты</a></li>
-      </ul>
+    <div class="backdrop is-hidden" data-mobile>
+      <div class="mobile-menu conteiner" >
+        <button data-mobile-close type="button" class="mobile-button__close">
+          <svg class="mobile-icon__close" width="40px" height="40px">
+            <use href="./images/sprite.svg#mobile-close-icon"></use>
+          </svg>
+        </button>
+        <ul class="mobile-nav">
+          <li class="mobile-nav__item">
+            <a href="./index.html" class="mobile-nav__acent mobile-nav__link">Студия</a>
+          </li>
+          <li class="mobile-nav__item">
+            <a href="./portfolio.html" class="mobile-nav__link">Портфолио</a>
+          </li>
+          <li class="mobile-nav__item">
+            <a href="/" class="mobile-nav__link">Контакты</a>
+          </li>
+        </ul>
 
-      <ul class="mobile-contacts">
-        <li class="mobile-contacts__item">
-          <a href="tel:+380961111111" class="mobile-contacts__phone">+38 096 111 11 11</a></li>
-        <li class="mobile-contacts__item">
-          <a href="mailto:info@devstudio.com" class="mobile-contacts__mail">info@devstudio.com</a></li>
-      </ul>
+        <ul class="mobile-contacts">
+          <li class="mobile-contacts__item">
+            <a href="tel:+380961111111" class="mobile-contacts__phone">+38 096 111 11 11</a>
+          </li>
+          <li class="mobile-contacts__item">
+            <a href="mailto:info@devstudio.com" class="mobile-contacts__mail">info@devstudio.com</a>
+          </li>
+        </ul>
 
-      <ul class="mobile-socials">
-        <li class="mobile-socials__item">
-          <a href="" class="mobile-socials__link">Instagram</a></li>
-        <li class="mobile-socials__item">
-          <a href="" class="mobile-socials__link">Twitter</a></li>
-        <li class="mobile-socials__item">
-          <a href="" class="mobile-socials__link">Facebook</a></li>
-        <li class="mobile-socials__item">
-          <a href="" class="mobile-socials__link">LinkedIn</a></li>
-      </ul>
+        <ul class="mobile-socials">
+          <li class="mobile-socials__item">
+            <a href="" class="mobile-socials__link">Instagram</a>
+          </li>
+          <li class="mobile-socials__item">
+            <a href="" class="mobile-socials__link">Twitter</a>
+          </li>
+          <li class="mobile-socials__item">
+            <a href="" class="mobile-socials__link">Facebook</a>
+          </li>
+          <li class="mobile-socials__item">
+            <a href="" class="mobile-socials__link">LinkedIn</a>
+          </li>
+        </ul>
+      </div>
     </div>
 
     <!-- MAIN -->
@@ -109,9 +123,7 @@
             эффективные решения <br />
             для вашего бизнеса
           </h1>
-          <button data-modal-open type="button" class="hero__button">
-            Заказать услугу
-          </button>
+          <button data-modal-open type="button" class="hero__button">Заказать услугу</button>
         </div>
       </section>
       <!-- HERO MODAL WINDOW -->
@@ -127,30 +139,27 @@
             <p class="modal-form__title">Оставьте свои данные, мы вам перзвоним</p>
             <label class="modal-form__label" for="user_name"
               >Имя
-              <input class="modal-form__input" type="text" name="username" id="user_name"/>
+              <input class="modal-form__input" type="text" name="username" id="user_name" />
               <svg class="modal-form__icon" width="12px" height="12px">
                 <use href="./images/icons.svg#icon-name"></use>
               </svg>
             </label>
-            <label class="modal-form__label" for="user_phone">Телефон
-              <input
-                class="modal-form__input"
-                type="tel"
-                name="phone_number"
-                id="user_phone"
-              />
+            <label class="modal-form__label" for="user_phone"
+              >Телефон
+              <input class="modal-form__input" type="tel" name="phone_number" id="user_phone" />
               <svg class="modal-form__icon" width="12px" height="12px">
                 <use href="./images/icons.svg#icon-phone"></use>
               </svg>
             </label>
             <label class="modal-form__label" for="user_email"
               >Почта
-              <input class="modal-form__input" type="email" name="email" id="user_email"/>
+              <input class="modal-form__input" type="email" name="email" id="user_email" />
               <svg class="modal-form__icon" width="12px" height="12px">
                 <use href="./images/icons.svg#icon-mail"></use>
               </svg>
             </label>
-            <label class="modal-form__label">Комментарий
+            <label class="modal-form__label"
+              >Комментарий
               <textarea
                 class="modal-form__input comments"
                 name="comments"
@@ -159,13 +168,16 @@
               ></textarea>
             </label>
             <label class="checkbox-policy">
-                <input class="checkbox-policy visually-hidden" type="checkbox"/>
-                
-                <svg class="checkbox-policy__icon" width="16px" height="15px">
-                  <use href="./images/icons.svg#icon-checkbox"></use></svg>
+              <input class="checkbox-policy visually-hidden" type="checkbox" />
 
-              <span class="checkbox-policy__title">Соглашаюсь с рассылкой и принимаю
-                <a href="./" class="checkbox-policy__link">Условия договора</a></span>
+              <svg class="checkbox-policy__icon" width="16px" height="15px">
+                <use href="./images/icons.svg#icon-checkbox"></use>
+              </svg>
+
+              <span class="checkbox-policy__title"
+                >Соглашаюсь с рассылкой и принимаю
+                <a href="./" class="checkbox-policy__link">Условия договора</a></span
+              >
             </label>
             <button type="submit" class="modal-button__submit">Отправить</button>
           </form>
@@ -184,8 +196,7 @@
               </div>
               <h3 class="features__title">внимание к деталям</h3>
               <p class="features__text">
-                идейные соображения, а также начало повседневной работы по
-                формированию позиции.
+                идейные соображения, а также начало повседневной работы по формированию позиции.
               </p>
             </li>
             <li class="features__item">
@@ -196,8 +207,7 @@
               </div>
               <h3 class="features__title">пунктуальность</h3>
               <p class="features__text">
-                задача организации, в особенности же рамки и место обучения
-                кадров влечет за собой.
+                задача организации, в особенности же рамки и место обучения кадров влечет за собой.
               </p>
             </li>
             <li class="features__item">
@@ -208,8 +218,7 @@
               </div>
               <h3 class="features__title">планирование</h3>
               <p class="features__text">
-                завным образом консультация с широким активом в значительной
-                степени обуславливает.
+                завным образом консультация с широким активом в значительной степени обуславливает.
               </p>
             </li>
             <li class="features__item">
@@ -220,8 +229,7 @@
               </div>
               <h3 class="features__title">современные технологии</h3>
               <p class="features__text">
-                значимость этих проблем настолько очевидна, что реализация
-                плановых заданий.
+                значимость этих проблем настолько очевидна, что реализация плановых заданий.
               </p>
             </li>
           </ul>
@@ -234,57 +242,57 @@
           <ul class="offers__list">
             <li class="offers__item">
               <picture>
-                <source 
-                  media="(min-width: 1200px)" 
-                  srcset="
-                    ./images/offers/offers-1.jpg    1x,
-                    ./images/offers/offers-1_@2x.jpg 2x"
-                  type="image/jpg" />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/offers/offers-1.jpg 1x, ./images/offers/offers-1_@2x.jpg 2x"
+                  type="image/jpg"
+                />
 
-                  <img
+                <img
                   class="offers__image"
                   src="./images/offers/offers-1.jpg"
                   alt="desk office"
                   width="auto"
-                  loading="lazy"/>
+                  loading="lazy"
+                />
               </picture>
-                <p class="offers__text">десктопные приложения</p>
+              <p class="offers__text">десктопные приложения</p>
             </li>
             <li class="offers__item">
               <picture>
-                <source 
-                  media="(min-width: 1200px)" 
-                  srcset="
-                    ./images/offers/offers-2.jpg    1x,
-                    ./images/offers/offers-2_@2x.jpg 2x"
-                  type="image/jpg" />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/offers/offers-2.jpg 1x, ./images/offers/offers-2_@2x.jpg 2x"
+                  type="image/jpg"
+                />
 
-                  <img
+                <img
                   class="offers__image"
                   src="./images/offers/offers-2.jpg"
                   alt="desk office"
                   width="auto"
-                  loading="lazy"/>
+                  loading="lazy"
+                />
               </picture>
-                <p class="offers__text">мобильные приложения</p>
+              <p class="offers__text">мобильные приложения</p>
             </li>
             <li class="offers__item">
               <picture>
-                <source 
-                  media="(min-width: 1200px)" 
-                  srcset="
-                    ./images/offers/offers-3.jpg    1x,
-                    ./images/offers/offers-3_@2x.jpg 2x"
-                  type="image/jpg" />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/offers/offers-3.jpg 1x, ./images/offers/offers-3_@2x.jpg 2x"
+                  type="image/jpg"
+                />
 
-                  <img
+                <img
                   class="offers__image"
                   src="./images/offers/offers-3.jpg"
                   alt="desk office"
                   width="auto"
-                  loading="lazy"/>
+                  loading="lazy"
+                />
               </picture>
-                <p class="offers__text">дизайнерские решения</p>
+              <p class="offers__text">дизайнерские решения</p>
             </li>
           </ul>
         </div>
@@ -296,32 +304,25 @@
           <ul class="team-cards">
             <li class="team-cards__item">
               <picture>
-                <source 
-                  media="(min-width: 1200px)" 
-                  srcset="
-                    ./images/team/team-1_sm.jpg    1x,
-                    ./images/team/team-1_sm@2x.jpg 2x" 
-                  type="image/jpg" />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/team/team-1_sm.jpg 1x, ./images/team/team-1_sm@2x.jpg 2x"
+                  type="image/jpg"
+                />
 
-                <source 
-                  media="(min-width: 768px)" 
-                  srcset="
-                    ./images/team/team-1_md.jpg    1x,
-                    ./images/team/team-1_md@2x.jpg 2x" 
-                  type="image/jpg" />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images/team/team-1_md.jpg 1x, ./images/team/team-1_md@2x.jpg 2x"
+                  type="image/jpg"
+                />
 
-                  <source 
-                  media="(max-width: 767px)" 
-                  srcset="
-                    ./images/team/team-1_lg.jpg    1x,
-                    ./images/team/team-1_lg@2x.jpg 2x" 
-                  type="image/jpg" />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="./images/team/team-1_lg.jpg 1x, ./images/team/team-1_lg@2x.jpg 2x"
+                  type="image/jpg"
+                />
 
-                  <img
-                  src="./images/team/team-1_sm.jpg"
-                  alt="designer"
-                  width="auto"
-                  loading="lazy"/>
+                <img src="./images/team/team-1_sm.jpg" alt="designer" width="auto" loading="lazy" />
               </picture>
 
               <div class="team-member">
@@ -362,32 +363,30 @@
 
             <li class="team-cards__item">
               <picture>
-                <source 
-                  media="(min-width: 1200px)" 
-                  srcset="
-                    ./images/team/team-2_sm.jpg    1x,
-                    ./images/team/team-2_sm@2x.jpg 2x" 
-                  type="image/jpg" />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/team/team-2_sm.jpg 1x, ./images/team/team-2_sm@2x.jpg 2x"
+                  type="image/jpg"
+                />
 
-                <source 
-                  media="(min-width: 768px)" 
-                  srcset="
-                    ./images/team/team-2_md.jpg    1x,
-                    ./images/team/team-2_md@2x.jpg 2x" 
-                  type="image/jpg" />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images/team/team-2_md.jpg 1x, ./images/team/team-2_md@2x.jpg 2x"
+                  type="image/jpg"
+                />
 
-                  <source 
-                  media="(max-width: 767px)" 
-                  srcset="
-                    ./images/team/team-2_lg.jpg    1x,
-                    ./images/team/team-2_lg@2x.jpg 2x" 
-                  type="image/jpg" />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="./images/team/team-2_lg.jpg 1x, ./images/team/team-2_lg@2x.jpg 2x"
+                  type="image/jpg"
+                />
 
-                  <img
+                <img
                   src="./images/team/team-2_sm.jpg"
                   alt="developer"
                   width="auto"
-                  loading="lazy"/>
+                  loading="lazy"
+                />
               </picture>
 
               <div class="team-member">
@@ -428,32 +427,30 @@
 
             <li class="team-cards__item">
               <picture>
-                <source 
-                  media="(min-width: 1200px)" 
-                  srcset="
-                    ./images/team/team-3_sm.jpg    1x,
-                    ./images/team/team-3_sm@2x.jpg 2x" 
-                  type="image/jpg" />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/team/team-3_sm.jpg 1x, ./images/team/team-3_sm@2x.jpg 2x"
+                  type="image/jpg"
+                />
 
-                <source 
-                  media="(min-width: 768px)" 
-                  srcset="
-                    ./images/team/team-3_md.jpg    1x,
-                    ./images/team/team-3_md@2x.jpg 2x" 
-                  type="image/jpg" />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images/team/team-3_md.jpg 1x, ./images/team/team-3_md@2x.jpg 2x"
+                  type="image/jpg"
+                />
 
-                  <source 
-                  media="(max-width: 767px)" 
-                  srcset="
-                    ./images/team/team-3_lg.jpg    1x,
-                    ./images/team/team-3_lg@2x.jpg 2x" 
-                  type="image/jpg" />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="./images/team/team-3_lg.jpg 1x, ./images/team/team-3_lg@2x.jpg 2x"
+                  type="image/jpg"
+                />
 
-                  <img
+                <img
                   src="./images/team/team-3_sm.jpg"
                   alt="marketing"
                   width="auto"
-                  loading="lazy"/>
+                  loading="lazy"
+                />
               </picture>
 
               <div class="team-member">
@@ -494,32 +491,30 @@
 
             <li class="team-cards__item">
               <picture>
-                <source 
-                  media="(min-width: 1200px)" 
-                  srcset="
-                    ./images/team/team-4_sm.jpg    1x,
-                    ./images/team/team-4_sm@2x.jpg 2x" 
-                  type="image/jpg" />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/team/team-4_sm.jpg 1x, ./images/team/team-4_sm@2x.jpg 2x"
+                  type="image/jpg"
+                />
 
-                <source 
-                  media="(min-width: 768px)" 
-                  srcset="
-                    ./images/team/team-4_md.jpg    1x,
-                    ./images/team/team-4_md@2x.jpg 2x" 
-                  type="image/jpg" />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images/team/team-4_md.jpg 1x, ./images/team/team-4_md@2x.jpg 2x"
+                  type="image/jpg"
+                />
 
-                  <source 
-                  media="(max-width: 767px)" 
-                  srcset="
-                    ./images/team/team-4_lg.jpg    1x,
-                    ./images/team/team-4_lg@2x.jpg 2x" 
-                  type="image/jpg" />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="./images/team/team-4_lg.jpg 1x, ./images/team/team-4_lg@2x.jpg 2x"
+                  type="image/jpg"
+                />
 
-                  <img
+                <img
                   src="./images/team/team-4_sm.jpg"
                   alt="ui designer"
                   width="auto"
-                  loading="lazy"/>
+                  loading="lazy"
+                />
               </picture>
 
               <div class="team-member">
@@ -617,8 +612,9 @@
       <div class="container footer__container">
         <div class="footer__contacts">
           <a href="/" lang="en" class="logo logo__footer"
-            >Web<span class="logo__footer-acent">Studio</span></a>
-          <address class="footer__address">г. Киев, пр-т Леси Украинки, 26</address> 
+            >Web<span class="logo__footer-acent">Studio</span></a
+          >
+          <address class="footer__address">г. Киев, пр-т Леси Украинки, 26</address>
           <a href="mailto:info@devstudio.com" class="link footer__mail">info@devstudio.com</a>
           <a href="tel:+380961111111" class="link footer__phone">+38 096 111 11 11</a>
         </div>
@@ -662,12 +658,7 @@
         <form class="footer-form">
           <label class="footer-form__label">
             <span class="footer-form__title">подпишитесь на рассылку</span>
-            <input
-              class="footer-form__input"
-              type="email"
-              name="email"
-              placeholder="E-mail"
-            />
+            <input class="footer-form__input" type="email" name="email" placeholder="E-mail" />
           </label>
           <button type="submit" class="footer-form__button">
             Подписаться

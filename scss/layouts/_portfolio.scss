@@ -37,9 +37,8 @@
 
 .portfolio-card__link {
     text-decoration: none;
-    transition-property: color, box-shadow;
-    transition-duration: var(--primary-transition-durat);
-    transition-timing-function: var(--primary-transition-timing-function);
+    @include transition (color);
+    @include transition (box-shadow);
 
     &:hover,
     &:focus {

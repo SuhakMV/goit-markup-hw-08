@@ -68,7 +68,6 @@
 .footer-social__item {
     margin-right: 10px;
     &:nth-last-child(1) {margin-right: 0;}
-
 }
 
 .footer-social__link {
@@ -81,9 +80,7 @@
     color:#FFFFFF;
     background: rgba(255, 255, 255, 0.1);
 
-    transition-property: background-color;
-    transition-duration: var(--primary-transition-durat);
-    transition-timing-function: var(--primary-transition-timing-function);
+    @include transition (background-color);
 
     &:hover,
     &:focus {

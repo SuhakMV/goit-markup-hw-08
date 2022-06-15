@@ -26,9 +26,8 @@
 
     color: var(--primary-title-color);
     display: block;
-    transition-property: color;
-    transition-duration: var(--primary-transition-durat);
-    transition-timing-function: var(--primary-transition-timing-function);
+    @include transition (color);
+   
     padding-top: 32px;
     padding-bottom: 32px;
 

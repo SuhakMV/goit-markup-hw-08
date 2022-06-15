@@ -16,9 +16,8 @@
     flex-direction: column;
 
     background-color: #fff;
+    overflow-y: scroll;
 
-    //opacity: 0;
-    //pointer-events: none;
 }
 
 .mobile-nav__item {
@@ -36,9 +35,7 @@
     @include fonts (500, 40px, 1.17, 0.02em);
 
     color: var(--primary-title-color);
-    transition-property: color;
-    transition-duration: var(--primary-transition-durat);
-    transition-timing-function: var(--primary-transition-timing-function);  
+    @include transition (color);  
 }
 
 .mobile-nav__acent {
@@ -111,9 +108,7 @@
     border: none;
     color: var(--primary-title-color);
     background-color: #fff;
-    transition-property: color;
-    transition-duration: var(--primary-transition-durat);
-    transition-timing-function: var(--primary-transition-timing-function);
+    @include transition (color);
 
     fill: currentColor;
 

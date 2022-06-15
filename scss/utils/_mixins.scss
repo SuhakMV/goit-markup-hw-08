@@ -53,3 +53,12 @@
         }
       }
 }
+
+@mixin transition($property) {
+    $duration: var(--primary-transition-durat);
+    $timing-function: var(--primary-transition-timing-function);
+
+    transition-property: $property;
+    transition-duration: $duration;
+    transition-timing-function: $timing-function;
+}
