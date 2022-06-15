@@ -1021,6 +1021,7 @@ img {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    width: auto;
   }
 }
 
@@ -1031,6 +1032,8 @@ img {
 }
 
 .footer-form__label {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   width: 358px;
   margin-right: 12px;
 }
@@ -1038,11 +1041,13 @@ img {
 @media screen and (max-width: 1199.98px) {
   .footer-form__label {
     margin: 0;
-    width: 450px;
+    max-width: 450px;
   }
 }
 
 .footer-form__input {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   cursor: pointer;
   font-weight: 400;
   font-size: 16px;
@@ -1340,6 +1345,28 @@ img {
   margin-bottom: 16px;
 }
 
+.client-title {
+  font-size: 36px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: var(--primary-title-color);
+  margin-bottom: 50px;
+}
+
+.client-title::first-letter {
+  text-transform: capitalize;
+}
+
+@media screen and (max-width: 1199.98px) {
+  .client-title {
+    font-size: 28px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    margin: 0;
+  }
+}
+
 .client-list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1358,6 +1385,8 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1367,11 +1396,17 @@ img {
 }
 
 @media screen and (max-width: 767.98px) {
-  .client-card:nth-child(odd) {
-    margin-right: 30px;
+  .client-card {
+    margin: 30px 15px 0 15px;
   }
-  .client-card:nth-child(-n+4) {
-    margin-bottom: 30px;
+}
+
+@media screen and (min-width: 480px) {
+  .client-card:nth-child(odd) {
+    margin: 30px 15px 0 0;
+  }
+  .client-card:nth-child(even) {
+    margin: 30px 0 0 15px;
   }
 }
 
@@ -1419,7 +1454,7 @@ img {
           transition-timing-function: var(--primary-transition-timing-function);
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 767.98px) {
   .client-card__link {
     width: 210px;
   }
@@ -1458,7 +1493,7 @@ img {
 @media screen and (min-width: 480px) {
   .features__item {
     display: block;
-    width: 450px;
+    max-width: 450px;
     margin-bottom: 30px;
   }
 }
@@ -1488,12 +1523,14 @@ img {
   }
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 767.98px) {
   .features-image {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: 450px;
+    -ms-flex-preferred-size: auto;
+        flex-basis: auto;
+    max-width: 450px;
     height: 120px;
     -webkit-box-align: center;
         -ms-flex-align: center;

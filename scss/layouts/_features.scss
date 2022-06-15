@@ -6,7 +6,7 @@
 .features__item {
     @include mq(mobile) {
         display: block;
-        width: 450px;
+        max-width: 450px;
         margin-bottom: 30px;
     }
 
@@ -29,9 +29,10 @@
 }
 
 .features-image {
-    @include mq(mobile) {
+    @include mq(mobile-only) {
         display: flex;
-        width: 450px;
+        flex-basis: auto;
+        max-width: 450px;
         height: 120px;
         align-items: center;
         justify-content: center;

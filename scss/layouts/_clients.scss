@@ -1,3 +1,16 @@
+.client-title {
+    @include fonts (null, 36px, 1.17, 0.03em);
+
+    text-align: center;  
+    color: var(--primary-title-color);
+    margin-bottom: 50px;
+
+    &::first-letter {text-transform: capitalize;}
+
+    @include mq(not-desktop){
+        @include fonts (null, 28px, 1.17, 0.03em);
+        margin: 0;}}
+
 .client-list {
     display: flex;
     flex-wrap: wrap;
@@ -6,12 +19,18 @@
 
 .client-card {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    
+
     @include mq(mobile-only) {
-        &:nth-child(odd) {margin-right: 30px;}
-        &:nth-child(-n+4) {margin-bottom: 30px;}
+        margin: 30px 15px 0 15px;
+    }
+    
+    @include mq(mobile) {
+        
+        &:nth-child(odd) {margin:30px 15px 0 0}
+        &:nth-child(even ) {margin:30px 0 0 15px}
     }
 
     @include mq(tablet-only) {
@@ -28,7 +47,7 @@
 }
 
 .client-card__link {
-    @include mq(mobile) {
+    @include mq(mobile-only) {
         width: 210px;
     }
 
