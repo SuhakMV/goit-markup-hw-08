@@ -4,7 +4,7 @@
 
     @include mq(not-desktop) {
         flex-direction: column;
-        width: auto;
+        width: 100%;
     }
 
     @include mq(tablet-only) {
@@ -14,19 +14,19 @@
 
 .footer-form__label {
     box-sizing: border-box;
-    width: 358px;  
+    width: 358px; 
     margin-right: 12px;
 
     @include mq(not-desktop) {
-        margin: 0;
+        
+        margin: 0 auto;
+        width: 100%;
         max-width: 450px;
     }
 }
 
 .footer-form__input {
-    box-sizing: border-box;
     cursor: pointer;
-
     @include fonts(400, 16px, 1.25, 0.03em);
 
     width:inherit;
