@@ -73,22 +73,19 @@
 
     @include mq(not-desktop) {
         flex-direction: column;
+        margin-left: 50px;
     }
 }
 
 .site-nav__item:nth-last-child(-n+2){
     margin-left: 50px;
 }
-.contacts .contacts__item + .contacts__item
-    {margin-left: 50px;
-        @include mq(not-desktop) {
-            margin: 0;
-            padding: 0;}
-    }
 
 .contacts__item {
     @include mq(not-desktop) {
     &:nth-child(1){margin-bottom: 10px;}
+    &:nth-child(1){padding-top: 17px;}
+    &:nth-child(2){padding-bottom: 17px;}
     }
 }
 

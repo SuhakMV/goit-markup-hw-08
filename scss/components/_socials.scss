@@ -1,7 +1,13 @@
 .social-networks {
     display: flex;
     align-items: center;
-    justify-content: center;}
+    justify-content: center;
+}
+
+.social-networks__item{
+    margin-right: 10px;
+    &:nth-last-child(1){margin-right: 0;}
+}
 
 .social-networks__link {
     display: flex;
@@ -36,8 +42,7 @@
     }
 
     @include mq(tablet-only) {
-        margin-right: 89px;
-        margin-left: auto;
+        margin-right: 0;
         margin-bottom: 60px;
     }
 

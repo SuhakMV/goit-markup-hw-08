@@ -12,7 +12,10 @@
     @include mq(tablet-only){
         display: flex;
         flex-wrap: wrap;
-        align-items: baseline;}
+        align-items: baseline;
+        justify-content: space-between;
+        padding-left: 76px;
+        padding-right: 89px;}
 
     @include mq(mobile-only) {
         display: flex;
@@ -22,18 +25,17 @@
 }
 
 .footer__contacts {
-    margin-right: 70px;
+    justify-content: center;
+    align-items: center;
 
     @include mq(not-desktop) {
-        margin: 0 auto;
         text-align: center;
         margin-bottom: 60px;
     }
 
-    @include mq(tablet-only) {
-        margin-left: 76px;
+    @include mq(desktop) {
+        margin-right: 70px;
     }
-
 }
 
 .footer__address {

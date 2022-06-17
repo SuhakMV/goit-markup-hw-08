@@ -18,6 +18,9 @@
 
     @include mq(not-desktop) {
         width: 450px;}
+
+    @include mq(mobile-only) {
+        max-width: 100%;}
 }
 
 .modal-form {

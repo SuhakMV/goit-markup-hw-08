@@ -1,6 +1,7 @@
 .footer-form {
     display: flex;
     align-items: flex-end;
+    width: 100%;
 
     @include mq(not-desktop) {
         flex-direction: column;
@@ -14,7 +15,7 @@
 
 .footer-form__label {
     box-sizing: border-box;
-    width: 358px; 
+    width: 100%; 
     margin-right: 12px;
 
     @include mq(not-desktop) {

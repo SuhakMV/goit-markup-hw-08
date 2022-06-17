@@ -62,7 +62,15 @@
     @include mq(not-desktop){
     @include fonts(900, 26px, 1.62, 0.06em);  
     }
-    
+
+    @media screen and (max-width:395px) {
+        font-size: calc(26px*2/3); 
+    }
+
+    @media screen and (max-width:325px) {
+        font-size: calc(26px*1/2); 
+    }
+
     text-transform: uppercase;
     color: #FFFFFF;
     margin-bottom: 30px;}
