@@ -5,8 +5,7 @@
   --primary-button-color: #2196F3;
   --accent-color: #188CE8;
   --primary-transition-durat: 250ms;
-  --primary-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
+  --primary-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);}
 
 .visually-hidden {
   position: absolute;
@@ -282,6 +281,12 @@ img {
 
 .site-nav__item:nth-last-child(-n+2) {
   margin-left: 50px;
+}
+
+@media screen and (min-width: 1200px) {
+  .contacts__item:nth-child(1) {
+    margin-right: 30px;
+  }
 }
 
 @media screen and (max-width: 1199.98px) {
