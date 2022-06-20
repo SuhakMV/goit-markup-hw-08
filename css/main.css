@@ -5,7 +5,8 @@
   --primary-button-color: #2196F3;
   --accent-color: #188CE8;
   --primary-transition-durat: 250ms;
-  --primary-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);}
+  --primary-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
 
 .visually-hidden {
   position: absolute;
@@ -406,16 +407,18 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .mobile-socials__item {
+  margin-top: 10px;
   padding: 0 10px;
-  border-left: 1px solid rgba(33, 33, 33, 0.2);
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
 }
 
-.mobile-socials__item:first-child {
-  padding-left: 0;
-  border-left: none;
+.mobile-socials__item:nth-last-child(1) {
+  border-right: none;
 }
 
 .mobile-socials__link {
